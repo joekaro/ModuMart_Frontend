@@ -1,6 +1,6 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/CartContext";
 import { Badge } from "react-bootstrap";
 
 const Navbar = () => {
