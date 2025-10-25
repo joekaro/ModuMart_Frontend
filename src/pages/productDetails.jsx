@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axiosInstance from "../utils/axios"; // ✅ use your existing axios instance
 import { Spinner, Button, Form } from "react-bootstrap";
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/CartContext";
 import { toast } from "react-toastify";
 
 const ProductDetails = () => {
