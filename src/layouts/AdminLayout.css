@@ -1,0 +1,14 @@
+/* add to src/components/AdminSidebar.css or global stylesheet */
+.admin-sidebar a.nav-link {
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.admin-sidebar a.nav-link:hover {
+  background: rgba(255,255,255,0.03);
+}
+.admin-sidebar .nav-link svg {
+  color: #ffffff;
+}
+.admin-sidebar .nav-link span {
+  font-size: 0.95rem;
+}
