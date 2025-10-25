@@ -1,4 +1,4 @@
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/CartContext";
 import { Button, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
