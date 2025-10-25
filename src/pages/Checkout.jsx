@@ -1,6 +1,6 @@
 // src/pages/Checkout.jsx
 import { useState } from "react";
-import { useCart } from "../context/cartContext";
+import { useCart } from "../context/CartContext";
 import api from "../api/axios";
 import { Form, Button, Spinner } from "react-bootstrap";
 import { toast } from "react-toastify";
