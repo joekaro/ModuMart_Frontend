@@ -109,7 +109,7 @@ const toggleWishlist = (product) => {
           <option value="all">All Categories</option>
           <option value="electronics">Electronics</option>
           <option value="fashion">Fashion</option>
-          <option value="home">Home Appliance</option>
+          <option value="home">HomeAppliance</option>
           <option value="grocery">Grocery</option>
         </select>
 
