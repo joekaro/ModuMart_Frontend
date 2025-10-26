@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import axios from "../utils/axios";
+import axiosInstance from "../utils/axios";
 
 function UserLogin() {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ function UserLogin() {
       // 🚫 Clear any existing admin session to avoid token mix-up
       localStorage.removeItem("adminInfo");
 
-      const { data } = await axios.post("/users/login", { email, password });
+      const { data } = await axiosInstance.post("/login", { email, password });
 
       // ✅ Save user data to localStorage
       localStorage.setItem("userInfo", JSON.stringify(data));
