@@ -22,7 +22,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("/api/products");
+        const res = await axios.get("/products");
         setProducts(res.data);
         setFilteredProducts(res.data);
       } catch (err) {
