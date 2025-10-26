@@ -1,6 +1,7 @@
 // src/pages/UserRegister.jsx
 import { useState } from "react";
 import axios from "../utils/axios";
+import axiosInstance from "../utils/axios";
 import { useNavigate, Link } from "react-router-dom";
 
 function UserRegister() {
@@ -17,7 +18,7 @@ function UserRegister() {
     setLoading(true);
 
     try {
-      const { data } = await axios.post("/users/register", {
+      const { data } = await axiosInstance.post("/users/register", {
         name,
         email,
         password,
