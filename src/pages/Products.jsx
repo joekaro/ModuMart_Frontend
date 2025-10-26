@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import axiosInstance from "../utils/axios";
 import { Link } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa"; // ❤️ Wishlist icons
 
@@ -22,7 +23,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("/products");
+        const res = await axiosInstance.get("/products");
         setProducts(res.data);
         setFilteredProducts(res.data);
       } catch (err) {
