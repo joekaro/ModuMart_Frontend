@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL:"https://modumart-api.onrender.com/",
+  baseURL:"https://modumart-api.onrender.com/api",
 });
 
 // ✅ Automatically attach token for both Admin and User safely
