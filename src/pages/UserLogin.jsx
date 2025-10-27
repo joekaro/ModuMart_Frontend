@@ -24,7 +24,7 @@ function UserLogin() {
       localStorage.removeItem("adminInfo");
        localStorage.removeItem("userInfo");
 
-      const { data } = await axiosInstance.post("/login", { email, password });
+      const { data } = await axiosInstance.post("/users/login", { email, password });
 
       // ✅ Save user data to localStorage
       localStorage.setItem("userInfo", JSON.stringify(data));
