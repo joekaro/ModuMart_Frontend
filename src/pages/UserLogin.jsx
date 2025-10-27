@@ -22,6 +22,7 @@ function UserLogin() {
     try {
       // 🚫 Clear any existing admin session to avoid token mix-up
       localStorage.removeItem("adminInfo");
+       localStorage.removeItem("userInfo");
 
       const { data } = await axiosInstance.post("/login", { email, password });
 
